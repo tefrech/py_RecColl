@@ -78,7 +78,7 @@ t = rartist + ' - ' + ralbum
 print(t)
 doc = dominate.document(title=t)
 with doc.head:
-    link(rel="stylesheet", href="\\static\\style.css")
+    link(rel="stylesheet", href="..\\static\\style.css")
     link(rel="preconnect", href="https://fonts.googleapis.com")
     link(rel="preconnect", href="https://fonts.gstatic.com")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Serif:wght"
