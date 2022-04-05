@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head><title>PICK A RECORD</title>
+    <meta charset=utf-8>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Serif:wght@100&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="static/js.js"></script>
+
+</head>
+    <body>
+        <h1>What sounds good...</h1>
+    <div class='cnt'>
+        <form action="/lpspin" method="post" class="spin">
+           <button name="forwardBtn" type="submit">LP SPIN!</button>
+        </form>
+        <form action="/sevspin" method="post" class="spin">
+           <button name="forwardBtn" type="submit">7 INCH SPIN!</button>
+        </form>
+        <form action="/tenspin" method="post" class="spin">
+           <button name="forwardBtn" type="submit">TEN INCH SPIN!</button>
+        </form>
+</div>
+    </body>
+</html>
