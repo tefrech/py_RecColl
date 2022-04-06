@@ -6,8 +6,6 @@ div {
 	padding: 0px;
 }
 
-.cnt {display: inline}
-
 h1 {
 	font-family: 'Roboto Slab', serif;
 	color: #292727;
@@ -26,15 +24,6 @@ h2 {
 	width: 80%;
 }
 
-h3 {
-	font-family: 'Roboto Slab', serif;
-	color: #292727;
-	font-size: 1.1vw;
-	padding: -1px;
-	overflow: none;
-	width: 80%;
-}
-
 img {
 	border: #62605F solid 10px;
 }
@@ -47,7 +36,7 @@ form {
     display: inline
 }
 
-.lp button {
+.lp {
     font-size:3vw;
     background-color: #1B85B8;
     border: none;
@@ -56,7 +45,7 @@ form {
     color: #292727;
     }
 
-.s button {
+.s {
     font-size:3vw;
     padding: 10px;
     background-color: #CD3A3A;
@@ -65,7 +54,7 @@ form {
     font-family: 'Roboto Slab', serif;
     }
 
-.t button {
+.t {
     font-size:3vw;
     background-color: #559E83;
     border: none;

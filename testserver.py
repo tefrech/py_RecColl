@@ -13,7 +13,8 @@ import numpy as np
 from dominate.tags import *
 from flask import Flask, render_template, url_for
 import os
-os.chdir('C:\\Users\\todd9\\OneDrive\\Projects\\py_RecColl')
+filedir = ('C:\\Users\\todd9\\OneDrive\\Projects\\py_RecColl\\static')
+os.chdir(filedir)
 
 # Start app
 app = Flask(__name__, template_folder='temp_test')
