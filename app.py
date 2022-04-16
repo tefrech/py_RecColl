@@ -7,7 +7,7 @@ import discogs_client
 import pandas as pd
 import re
 from flask import Flask, render_template, request
-import os
+# import os
 import time
 import random
 
@@ -34,15 +34,15 @@ me = d.identity()
 if testmode == 1:
     print("Importing from CSV...")
     # PULLING FROM CSV FOR TESTING
-    filedir = 'C:\\Users\\todd9\\OneDrive\\Projects\\py_RecColl\\static'
-    os.chdir(filedir)
-    coll = pd.read_csv('coll.csv')
+    # filedir = 'C:\\Users\\todd9\\OneDrive\\Projects\\py_RecColl\\static'
+    # os.chdir(filedir)
+    coll = pd.read_csv('static/coll.csv')
     # Pull just the release_id column for each format; extract the values to lists
     coll12 = coll['release_id'][coll['Format'].str.contains('12')].values.tolist()
     coll7 = coll['release_id'][coll['Format'].str.contains('7')].values.tolist()
     coll10 = coll['release_id'][coll['Format'].str.contains('10')].values.tolist()
-    filedir = 'C:\\Users\\todd9\\OneDrive\\Projects\\py_RecColl'
-    os.chdir(filedir)
+    # filedir = 'C:\\Users\\todd9\\OneDrive\\Projects\\py_RecColl'
+    # os.chdir(filedir)
 else:
     # Start downloading collection
     print("Pulling collection from Discogs...")
