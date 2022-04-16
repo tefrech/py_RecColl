@@ -7,7 +7,10 @@
     return false;
   });
 });
-
+ function loading() {
+               $("#loading").show();
+               $("#content").hide();
+        }
      $(function() {
       $('a#test').bind('click', function() {
         $.getJSON('/lpspin',

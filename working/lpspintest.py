@@ -102,7 +102,7 @@ def lpspin(name=None):
         reimguri = "https://s.discogs.com/2f932bf835c333c1e46ad4c768ac79eb3ebdbd2f/images/discogs-white.png"
     # print(reimguri)
     # Return webpage
-    css = 'static/style.css'
+    css = 'static/01_style.css'
     doc = dominate.document(title=t)
     with doc.head:
         link(rel="preconnect", href="https://fonts.googleapis.com")
@@ -127,14 +127,14 @@ def lpspin(name=None):
             with form(action="tenspin", method="post", cls="t"):
                 button("10 INCH!", name="forwardBtn10", type="submit", cls="t")
     docstr = str(doc)
-    path = 'temp_test/lpspin.html'
+    path = 'temp_test/spin.html'
     f = open(path, 'w')
     f.write(docstr)
     f.close()
     # print(docstr)
     while True:
         try:
-            return render_template('lpspin.html', name=name)
+            return render_template('spin.html', name=name)
         except (UnicodeError, UnicodeDecodeError) as e:
             return "Trying again..."
         time.sleep(5)

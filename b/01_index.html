@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 
-<head><title>Test2</title>
+<head><title>PICK A RECORD</title>
     <meta charset=utf-8>
     <link rel="stylesheet" href="static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,12 +14,15 @@
     <body>
         <h1>What sounds good...</h1>
     <div class='cnt'>
-        <form action="/spin" method="post" class="spin">
-           <button name="forwardBtn" type="submit">SPIN!</button>
+        <form action="/lpspin" method="post" class="spin">
+            <button name="forwardBtn" type="submit">LP SPIN!</button>
         </form>
-
-
-
+        <form action="/sevspin" method="post" class="spin">
+           <button name="forwardBtn" type="submit">7 INCH SPIN!</button>
+        </form>
+        <form action="/tenspin" method="post" class="spin">
+           <button name="forwardBtn" type="submit">TEN INCH SPIN!</button>
+        </form>
 </div>
     </body>
 </html>

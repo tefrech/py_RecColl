@@ -44,7 +44,7 @@ fake = Factory.create()
 doc = dominate.document(title=randomartist+' - '+randomalbum)
 
 with doc.head:
-    link(rel='stylesheet', href='style.css')
+    link(rel='stylesheet', href='01_style.css')
 
 with doc:
     body(style='background-color:'+fake.hex_color()+'; color:'+fake.hex_color())

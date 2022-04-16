@@ -56,6 +56,7 @@ h3 {
     }
 
 img {
+	border: #62605F solid 2px;
 	height:auto;
     }
 
@@ -69,7 +70,7 @@ form {
     text-align: center;
     border-radius: 10px;
     font-family: 'Roboto Slab', serif;
-    color: #FFFFFF;
+    color: #E6E6E6;
     width: 50%;
     }
 
@@ -82,7 +83,7 @@ form {
     text-align: center;
     border-radius: 10px;
     font-family: 'Roboto Slab', serif;
-    color: #FFFFFF;
+    color: #E6E6E6;
     width: 40%;
     cursor: grab;
     }
@@ -102,16 +103,3 @@ form {
 bt {
     width: 25%;
 }
-
-div#content {
-    display: none;
-    }
-
-div#loading {
-    top: 700 px;
-    border: none;
-    align: center;
-    width: 700px;
-    height: 700px;
-    cursor: wait;
-    }
